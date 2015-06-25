@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0FFB452A-77F0-4299-B2F9-0E4992772290</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iPhone_0704</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E87E247580879E02BF5F2A1F2F33AF11C50A8A2D</key>
+		<string>https://github.com/wtnbtkts/iPhoneoriginal.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iPhone_0704.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E87E247580879E02BF5F2A1F2F33AF11C50A8A2D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wtnbtkts/iPhoneoriginal.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E87E247580879E02BF5F2A1F2F33AF11C50A8A2D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E87E247580879E02BF5F2A1F2F33AF11C50A8A2D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iPhone_0704</string>
+		</dict>
+	</array>
+</dict>
+</plist>
