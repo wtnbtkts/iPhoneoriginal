@@ -30,6 +30,7 @@ class QuizViewController: UIViewController {
     
     //クイズを格納する配列
     var quizArray = [NSMutableArray]()
+    var timer: NSTimer!
     
     //クイズを表示するTextView
     @IBOutlet var quizTextView: UITextView!
@@ -73,7 +74,8 @@ class QuizViewController: UIViewController {
         self.view.addSubview(myLabel)
         
         //タイマーを作る.
-        NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "onUpdate:", userInfo: nil, repeats: true)
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "onUpdate:", userInfo: nil, repeats: true)
         
 
     }
@@ -105,6 +107,7 @@ class QuizViewController: UIViewController {
         
         //解いた問題数の合計が予め設定していた問題数に達したら結果画面へ
         if sum == questionNumber {
+            timer.invalidate()
             performSegueToResult()
         }
         quizArray.removeAtIndex(random)
@@ -118,6 +121,7 @@ class QuizViewController: UIViewController {
         cnt -= 0.1
         if cnt < 0{
             cnt = 0
+            timer.invalidate()
             performSegueToResult()
         }
         

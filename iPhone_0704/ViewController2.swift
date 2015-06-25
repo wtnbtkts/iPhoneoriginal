@@ -12,7 +12,6 @@ import UIKit
 
 class ViewController2: UIViewController {
     
-    
     @IBOutlet weak var payment: UITextField!
     @IBOutlet weak var persons: UITextField!
     @IBOutlet weak var answer: UILabel!
@@ -65,8 +64,5 @@ class ViewController2: UIViewController {
         } else {
             println("メッセージがありません")
         }
-        
     }
-    
-    
 }

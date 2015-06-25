@@ -158,7 +158,7 @@
                         <outletCollection property="choiceButtons" destination="QbA-i6-hJK" collectionClass="NSMutableArray" id="2YO-me-T16"/>
                         <outletCollection property="choiceButtons" destination="aIH-DZ-qa9" collectionClass="NSMutableArray" id="DaR-ts-pLL"/>
                         <outletCollection property="choiceButtons" destination="fk0-lv-vUR" collectionClass="NSMutableArray" id="5F2-sJ-YEf"/>
-                        <segue destination="JEx-zN-3Hx" kind="show" id="n8U-hu-bJ5"/>
+                        <segue destination="JEx-zN-3Hx" kind="show" identifier="toResultView" id="n8U-hu-bJ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Weu-oC-vzj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -800,9 +800,9 @@
         <image name="nabe.png" width="400" height="343"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="T4X-L2-3Q2"/>
         <segue reference="VoC-4H-byA"/>
         <segue reference="W06-lm-NuG"/>
-        <segue reference="3xu-Uc-ueQ"/>
+        <segue reference="T4X-L2-3Q2"/>
+        <segue reference="YX6-vR-cLP"/>
     </inferredMetricsTieBreakers>
 </document>
