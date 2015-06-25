@@ -10,6 +10,8 @@
 	<string>iPhone_0704</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>36F5586802EA866C319472F7CD45D86F9E25B065</key>
+		<string>https://github.com/wtnbtkts/iPhoneoriginal.git</string>
 		<key>E87E247580879E02BF5F2A1F2F33AF11C50A8A2D</key>
 		<string>https://github.com/wtnbtkts/iPhoneoriginal.git</string>
 	</dict>
@@ -17,15 +19,17 @@
 	<string>iPhone_0704.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E87E247580879E02BF5F2A1F2F33AF11C50A8A2D</key>
+		<key>36F5586802EA866C319472F7CD45D86F9E25B065</key>
 		<string>../..</string>
+		<key>E87E247580879E02BF5F2A1F2F33AF11C50A8A2D</key>
+		<string>../../../iPhone_0704</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/wtnbtkts/iPhoneoriginal.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E87E247580879E02BF5F2A1F2F33AF11C50A8A2D</string>
+	<string>36F5586802EA866C319472F7CD45D86F9E25B065</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>E87E247580879E02BF5F2A1F2F33AF11C50A8A2D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iPhone_0704</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>36F5586802EA866C319472F7CD45D86F9E25B065</string>
+			<key>IDESourceControlWCCName</key>
+			<string>original</string>
 		</dict>
 	</array>
 </dict>
