@@ -6,20 +6,20 @@
 //  Copyright (c) 2015年 渡辺 貴俊. All rights reserved.
 //
 
-
 import UIKit
 
-class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet var pickerView: UIPickerView!
     @IBOutlet var label: UILabel!
     @IBOutlet var textView: UITextView!
     
     //時間計測用の変数.
-    var cnt : Float = 10
+    var cnt : Float = 5
     
     //時間表示用のラベル.
     var myLabel : UILabel!
+    
     
     //当たった回数
     //    var hit = 0
@@ -32,30 +32,23 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     // 全て文字列の空の配列を宣言
     //    var numbers = [String]()
-    var answers = [Int](count: 4, repeatedValue: 0)
+    var answers = [Int](count: 3, repeatedValue: 0)
     var array = [String]()
     
     //正解数
-    //var correctAnswer4:Int = 0
+    //var correctAnswer:Int = 0
     
-    //@IBOutlet weak var paramLabel: UILabel!
+    /// 画面遷移時に渡す為の値
+    var _param:String = "segue OK"
     
-    //パラメータ受取用プロパティ
-    //var param:String = "init param"
     
-    /// ラベルをアウトプット接続
-    @IBOutlet weak var _myLabel: UILabel!
     
-    /// 遷移時の受け取り用の変数
-    var _second:String = ""
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        // ラベルに受け取った遷移用の変数を渡す
-        _myLabel.text = _second
         
         //ラベルを作る.
         myLabel = UILabel(frame: CGRectMake(0,0,150,50))
@@ -112,7 +105,7 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     }
     /*
     func performSegueToResult() {
-    performSegueWithIdentifier("toResultView", sender: nil)
+        performSegueWithIdentifier("toResultView", sender: nil)
     }
     */
     
@@ -121,7 +114,7 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     (実装必須)表示列
     */
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 4
+        return 3
     }
     
     /*
@@ -192,7 +185,7 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
         println("\(hit)hit")
         
-        if (hit == 4) {
+        if (hit == 3) {
             label.text = "クリア！"
             button.enabled = false
             //correctAnswer++
@@ -200,12 +193,33 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             label.text = "\(hit)個正解！"
             textView.text = "\(hit)個正解！\n" + textView.text
         }
+        
         /*
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
-        appDelegate.correctAnswer = "correctAnswer+200" //appDelegateの変数を操作
+        appDelegate.correctAnswer = "100" //appDelegateの変数を操作
         */
         
+        
     }
+    /**
+    画面遷移ボタン
+    */
+    @IBAction func _myButton(sender: AnyObject) {
+        performSegueWithIdentifier("segue",sender: nil)
+    }
+    /**
+    画面遷移時に値を遷移先に渡す
+    */
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "segue") {
+            // SecondViewControllerクラスをインスタンス化してsegue（画面遷移）で値を渡せるようにバンドルする
+            var secondView : kazuateViewController = segue.destinationViewController as! kazuateViewController
+            // secondView（バンドルされた変数）に受け取り用の変数を引数とし_paramを渡す（_paramには渡したい値）
+            // この時SecondViewControllerにて受け取る同型の変数を用意しておかないとエラーになる
+            secondView._second = _param
+        }
+    }
+    
 }
 
 /*

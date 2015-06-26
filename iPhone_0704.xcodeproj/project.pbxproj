@@ -19,11 +19,15 @@
 		A256E63E1B3469BB00A681D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A256E63D1B3469BB00A681D1 /* Main.storyboard */; };
 		A256E6461B34733100A681D1 /* flashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256E6451B34733100A681D1 /* flashViewController.swift */; };
 		A256E64A1B35413200A681D1 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256E6491B35413200A681D1 /* ViewController2.swift */; };
+		A2A7125A1B3D1846009EA12D /* riceoutResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A712591B3D1846009EA12D /* riceoutResultViewController.swift */; };
+		A2A7125C1B3D1B2C009EA12D /* riceinResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A7125B1B3D1B2C009EA12D /* riceinResultViewController.swift */; };
 		A2C1AD571B3301B900850821 /* Result3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C1AD561B3301B900850821 /* Result3ViewController.swift */; };
 		A2C1AD591B33024C00850821 /* soroban.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C1AD581B33024C00850821 /* soroban.png */; };
 		A2C1AD5D1B3308CB00850821 /* fuji245.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C1AD5A1B3308CB00850821 /* fuji245.jpg */; };
 		A2C1AD5E1B3308CB00850821 /* fuji464.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C1AD5B1B3308CB00850821 /* fuji464.jpg */; };
 		A2C1AD5F1B3308CB00850821 /* fuji469.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C1AD5C1B3308CB00850821 /* fuji469.jpg */; };
+		A2D92DA61B3C787900946685 /* kazuate3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D92DA51B3C787900946685 /* kazuate3ViewController.swift */; };
+		A2D92DA81B3C7EB600946685 /* kazuateResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D92DA71B3C7EB600946685 /* kazuateResultViewController.swift */; };
 		A2DC39771B3BF80900DD272A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC39751B3BF80900DD272A /* QuizViewController.swift */; };
 		A2DC39781B3BF80900DD272A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC39761B3BF80900DD272A /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
@@ -55,11 +59,15 @@
 		A256E63D1B3469BB00A681D1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A256E6451B34733100A681D1 /* flashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flashViewController.swift; sourceTree = "<group>"; };
 		A256E6491B35413200A681D1 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		A2A712591B3D1846009EA12D /* riceoutResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = riceoutResultViewController.swift; sourceTree = "<group>"; };
+		A2A7125B1B3D1B2C009EA12D /* riceinResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = riceinResultViewController.swift; sourceTree = "<group>"; };
 		A2C1AD561B3301B900850821 /* Result3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result3ViewController.swift; sourceTree = "<group>"; };
 		A2C1AD581B33024C00850821 /* soroban.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soroban.png; sourceTree = "<group>"; };
 		A2C1AD5A1B3308CB00850821 /* fuji245.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fuji245.jpg; sourceTree = "<group>"; };
 		A2C1AD5B1B3308CB00850821 /* fuji464.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fuji464.jpg; sourceTree = "<group>"; };
 		A2C1AD5C1B3308CB00850821 /* fuji469.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fuji469.jpg; sourceTree = "<group>"; };
+		A2D92DA51B3C787900946685 /* kazuate3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kazuate3ViewController.swift; sourceTree = "<group>"; };
+		A2D92DA71B3C7EB600946685 /* kazuateResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kazuateResultViewController.swift; sourceTree = "<group>"; };
 		A2DC39751B3BF80900DD272A /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		A2DC39761B3BF80900DD272A /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,11 +112,15 @@
 			isa = PBXGroup;
 			children = (
 				A201F3A01B308C0200E60611 /* AppDelegate.swift */,
+				A2D92DA51B3C787900946685 /* kazuate3ViewController.swift */,
 				A219B1B21B3A8957001E1783 /* kazuateViewController.swift */,
+				A2D92DA71B3C7EB600946685 /* kazuateResultViewController.swift */,
 				A2DC39751B3BF80900DD272A /* QuizViewController.swift */,
 				A2DC39761B3BF80900DD272A /* ResultViewController.swift */,
 				A256E6491B35413200A681D1 /* ViewController2.swift */,
 				A256E63D1B3469BB00A681D1 /* Main.storyboard */,
+				A2A712591B3D1846009EA12D /* riceoutResultViewController.swift */,
+				A2A7125B1B3D1B2C009EA12D /* riceinResultViewController.swift */,
 				A201F3A21B308C0200E60611 /* ViewController.swift */,
 				A2C1AD561B3301B900850821 /* Result3ViewController.swift */,
 				A256E6451B34733100A681D1 /* flashViewController.swift */,
@@ -259,11 +271,15 @@
 			files = (
 				A219B1B31B3A8957001E1783 /* kazuateViewController.swift in Sources */,
 				A256E6461B34733100A681D1 /* flashViewController.swift in Sources */,
+				A2A7125A1B3D1846009EA12D /* riceoutResultViewController.swift in Sources */,
+				A2D92DA81B3C7EB600946685 /* kazuateResultViewController.swift in Sources */,
+				A2D92DA61B3C787900946685 /* kazuate3ViewController.swift in Sources */,
 				A201F3A31B308C0200E60611 /* ViewController.swift in Sources */,
 				A2DC39771B3BF80900DD272A /* QuizViewController.swift in Sources */,
 				A201F3A11B308C0200E60611 /* AppDelegate.swift in Sources */,
 				A219B1B51B3A8AD7001E1783 /* santaku.swift in Sources */,
 				A2C1AD571B3301B900850821 /* Result3ViewController.swift in Sources */,
+				A2A7125C1B3D1B2C009EA12D /* riceinResultViewController.swift in Sources */,
 				A256E64A1B35413200A681D1 /* ViewController2.swift in Sources */,
 				A2DC39781B3BF80900DD272A /* ResultViewController.swift in Sources */,
 			);
