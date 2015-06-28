@@ -52,7 +52,6 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     /// 遷移時の受け取り用の変数
     var _second:String = ""
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         println("score2\(score2)")
