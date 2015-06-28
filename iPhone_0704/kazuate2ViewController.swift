@@ -8,7 +8,7 @@
 
 import UIKit
 
-class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class kazuate2ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet var pickerView: UIPickerView!
     @IBOutlet var label: UILabel!
@@ -20,11 +20,9 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     //時間表示用のラベル.
     var myLabel : UILabel!
     
-    //スコア
-    var score : Int = 0
     
     //当たった回数
-    // var hit = 0
+    //    var hit = 0
     
     //挑戦した回数
     var count = 0
@@ -97,9 +95,7 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         cnt -= 0.1
         if cnt < 0{
             cnt = 0
-            timer.invalidate()
             performSegueToResult()
-            
         }
         
         //桁数を指定して文字列を作る.
@@ -192,16 +188,12 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             label.text = "クリア！"
             label.textColor = UIColor.redColor()
             button.enabled = false
-            score = 100
             //correctAnswer++
-            println("vvvvvvvvvvscore\(score)")
         } else {
             label.text = "\(hit)個正解！"
             textView.text = "\(hit)個正解！\n" + textView.text
-            score = 0
-            println("bbbbbbbbbscore\(score)")
         }
-        println("aaaaaascore\(score)")
+        
         /*
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
         appDelegate.correctAnswer = "100" //appDelegateの変数を操作
@@ -227,14 +219,6 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             secondView._second = _param
         }
     }
-    
-    
-    override func viewWillDisappear(animated: Bool) {
-        super.viewDidDisappear(animated)
-        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appDelegate.ViewVal = score //textField.textの値を引き渡す
-    }
-    
     
 }
 

@@ -19,16 +19,21 @@ class kazuateResultViewController: UIViewController {
     
     @IBOutlet var myLabel : UILabel!
     
+    //スコア
+    var score : Int!
+    //スコア表示
+    @IBOutlet var mylabel2 : UILabel!
+    
     private var myImageView: UIImageView!
     
     //var correctAnswer :
     
-    
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        println("score\(score)")
         // Labelを作成.
         let myLabel: UILabel = UILabel(frame: CGRectMake(0,0,250,100))
         
@@ -115,11 +120,27 @@ class kazuateResultViewController: UIViewController {
         self.view.addSubview(myLabel)
         
         // Do any additional setup after loading the view.
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        score = appDelegate.ViewVal //scorekekkaにscore4の値を引き渡す
+        mylabel2.text = "\(score)点獲得！"
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.ViewVal = score //scorekekkaの値を引き渡す
+    }
+    
+    
     
 }

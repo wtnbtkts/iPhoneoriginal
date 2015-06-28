@@ -45,7 +45,24 @@ class riceoutResultViewController: UIViewController {
     
     private var myImageView: UIImageView!
     
+    var score : Int!
+    
+    
+//    override func viewWillDisappear(animated: Bool) {
+//        super.viewDidDisappear(animated)
+//        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+//        appDelegate.ViewVal = score //scorekekkaの値を引き渡す
+//    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        score = appDelegate.ViewVal //scorekekkaにscore4の値を引き渡す
+    }
+    
+
     override func viewDidLoad() {
+        super.viewDidLoad()
         
         // UIImageViewを作成する.
         myImageView = UIImageView(frame: CGRectMake(0,0,100,120))
@@ -88,77 +105,76 @@ class riceoutResultViewController: UIViewController {
             
             // UIImageViewをViewに追加する.
             self.view.addSubview(myImageView)
-            
+            println("score\(score)")
             // Labelに文字を代入.
-            if cnt == 1000 {
-                myLabel2.text = "キムチ鍋"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "5.gif")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }else if cnt == 900 {
-                myLabel2.text = "イタリアン"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "4.gif")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }else if cnt == 800{
-                myLabel2.text = "丼モノ"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "3.gif")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }else if cnt == 700{
-                myLabel2.text = "ラーメン"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "2.gif")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }else if cnt == 600{
-                myLabel2.text = "カレー"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "2.gif")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }else if cnt == 500{
-                myLabel2.text = "500円定食"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "a.jpg")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }else if cnt == 400{
-                myLabel2.text = "牛丼"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "a.jpg")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }else if cnt == 300{
-                myLabel2.text = "おにぎりとパンを買って家に帰る"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "a.jpg")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }else if cnt == 200{
-                myLabel2.text = "カップ麺を買って家に帰る"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "a.jpg")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }else if cnt == 100{
-                myLabel2.text = "プリンを買って家に帰る"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "a.jpg")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }
-            else {
-                myLabel2.text = "今日のご飯はありません"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "2.gif")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }
-            
+//            if score == 1000 {
+//                myLabel2.text = "キムチ鍋"
+//                // 表示する画像を設定する.
+//                let myImage = UIImage(named: "5.gif")
+//                // 画像をUIImageViewに設定する.
+//                myImageView.image = myImage
+//            }else if score == 900 {
+//                myLabel2.text = "イタリアン"
+//                // 表示する画像を設定する.
+//                let myImage = UIImage(named: "4.gif")
+//                // 画像をUIImageViewに設定する.
+//                myImageView.image = myImage
+//            }else if score == 800{
+//                myLabel2.text = "丼モノ"
+//                // 表示する画像を設定する.
+//                let myImage = UIImage(named: "3.gif")
+//                // 画像をUIImageViewに設定する.
+//                myImageView.image = myImage
+//            }else if score == 700{
+//                myLabel2.text = "ラーメン"
+//                // 表示する画像を設定する.
+//                let myImage = UIImage(named: "2.gif")
+//                // 画像をUIImageViewに設定する.
+//                myImageView.image = myImage
+//            }else if score == 600{
+//                myLabel2.text = "カレー"
+//                // 表示する画像を設定する.
+//                let myImage = UIImage(named: "2.gif")
+//                // 画像をUIImageViewに設定する.
+//                myImageView.image = myImage
+//            }else if score == 500{
+//                myLabel2.text = "500円定食"
+//                // 表示する画像を設定する.
+//                let myImage = UIImage(named: "a.jpg")
+//                // 画像をUIImageViewに設定する.
+//                myImageView.image = myImage
+//            }else if score == 400{
+//                myLabel2.text = "牛丼"
+//                // 表示する画像を設定する.
+//                let myImage = UIImage(named: "a.jpg")
+//                // 画像をUIImageViewに設定する.
+//                myImageView.image = myImage
+//            }else if score == 300{
+//                myLabel2.text = "おにぎりとパンを買って家に帰る"
+//                // 表示する画像を設定する.
+//                let myImage = UIImage(named: "a.jpg")
+//                // 画像をUIImageViewに設定する.
+//                myImageView.image = myImage
+//            }else if score == 200{
+//                myLabel2.text = "カップ麺を買って家に帰る"
+//                // 表示する画像を設定する.
+//                let myImage = UIImage(named: "a.jpg")
+//                // 画像をUIImageViewに設定する.
+//                myImageView.image = myImage
+//            }else if score == 100{
+//                myLabel2.text = "プリンを買って家に帰る"
+//                // 表示する画像を設定する.
+//                let myImage = UIImage(named: "a.jpg")
+//                // 画像をUIImageViewに設定する.
+//                myImageView.image = myImage
+//            }else {
+//                myLabel2.text = "今日のご飯はありません"
+//                // 表示する画像を設定する.
+//                let myImage = UIImage(named: "2.gif")
+//                // 画像をUIImageViewに設定する.
+//                myImageView.image = myImage
+//            }
+        
             
             // 文字の色を白にする.
             myLabel2.textColor = UIColor.whiteColor()
@@ -217,7 +233,7 @@ class riceoutResultViewController: UIViewController {
         
         myLabel.text = str
     }
-    
+
     
     
     /*

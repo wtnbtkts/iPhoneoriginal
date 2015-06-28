@@ -10,9 +10,18 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-    //var correctAnswer:String?
+    
+    private var viewVal: Int = 0 //※値が整数型の場合はInt
+    var ViewVal: Int {//※値が整数型の場合はInt
+        get {
+            return viewVal //値を受け取る側にviewValを返す。
+        }
+        set {
+            viewVal = newValue //引き渡す値をviewValに入れる。
+        }
+    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {

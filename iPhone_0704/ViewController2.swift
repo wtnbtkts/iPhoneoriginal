@@ -8,7 +8,6 @@
 
 import UIKit
 
-import UIKit
 
 class ViewController2: UIViewController {
     
@@ -39,8 +38,9 @@ class ViewController2: UIViewController {
         var number = persons.text.toInt()
         
         println(sum! / number!)
-        answer.text = "\(((sum! / number!)+1).description)円"
-        message = "\(sum! / number!)円を準備してください"
+        //answer.text = "\(((sum! / number!)+1).description)円"
+        //message = "\(sum! / number!)円を準備してください"
+        answer.text = "一人当たり\(sum! / number!)円だよ！！"
     }
     
     // 結果をリセット
@@ -52,6 +52,34 @@ class ViewController2: UIViewController {
     }
     
     // 結果をLINEに送る
+    @IBAction func share(sender: UIButton) {
+        
+        // 共有する項目
+        let shareText = "Life is Tech!"
+        let shareWebsite = NSURL(string: "https://life-is-tech.com/")!
+        let shareImage = UIImage(named: "nabe.png")!
+        
+        let activityItems = [shareText, shareWebsite, shareImage]
+        
+        // 初期化処理
+        let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        
+        // 使用しないアクティビティタイプ
+        let excludedActivityTypes = [
+            UIActivityTypePostToWeibo,
+            UIActivityTypeSaveToCameraRoll,
+            UIActivityTypePrint
+        ]
+        
+        activityVC.excludedActivityTypes = excludedActivityTypes
+        
+        // UIActivityViewControllerを表示
+        self.presentViewController(activityVC, animated: true, completion: nil)
+    }
+    
+    
+    
+    /*
     @IBAction func sendLine(sender: UIButton) {
         if message != nil {
             var encodeMessage: String! = message.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
@@ -65,4 +93,5 @@ class ViewController2: UIViewController {
             println("メッセージがありません")
         }
     }
+    */
 }

@@ -25,6 +25,14 @@ class riceinResultViewController: UIViewController {
     
     private var myImageView: UIImageView!
     
+    var score : Int!
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.ViewVal = score //scorekekkaの値を引き渡す
+    }
+    
     override func viewDidLoad() {
         
         // UIImageViewを作成する.
@@ -70,61 +78,61 @@ class riceinResultViewController: UIViewController {
             self.view.addSubview(myImageView)
             
             // Labelに文字を代入.
-            if cnt == 1000 {
+            if score == 1000 {
                 myLabel2.text = "キムチ鍋"
                 // 表示する画像を設定する.
                 let myImage = UIImage(named: "5.gif")
                 // 画像をUIImageViewに設定する.
                 myImageView.image = myImage
-            }else if cnt == 900 {
+            }else if score == 900 {
                 myLabel2.text = "彼氏・彼女と一緒にご飯を作る"
                 // 表示する画像を設定する.
                 let myImage = UIImage(named: "4.gif")
                 // 画像をUIImageViewに設定する.
                 myImageView.image = myImage
-            }else if cnt == 800{
+            }else if score == 800{
                 myLabel2.text = "やっぱり外食にする"
                 // 表示する画像を設定する.
                 let myImage = UIImage(named: "3.gif")
                 // 画像をUIImageViewに設定する.
                 myImageView.image = myImage
-            }else if cnt == 700{
+            }else if score == 700{
                 myLabel2.text = "ラーメンと餃子"
                 // 表示する画像を設定する.
                 let myImage = UIImage(named: "2.gif")
                 // 画像をUIImageViewに設定する.
                 myImageView.image = myImage
-            }else if cnt == 600{
+            }else if score == 600{
                 myLabel2.text = "カレー"
                 // 表示する画像を設定する.
                 let myImage = UIImage(named: "2.gif")
                 // 画像をUIImageViewに設定する.
                 myImageView.image = myImage
-            }else if cnt == 500{
+            }else if score == 500{
                 myLabel2.text = "ドリア"
                 // 表示する画像を設定する.
                 let myImage = UIImage(named: "a.jpg")
                 // 画像をUIImageViewに設定する.
                 myImageView.image = myImage
-            }else if cnt == 400{
+            }else if score == 400{
                 myLabel2.text = "納豆と卵かけごはん"
                 // 表示する画像を設定する.
                 let myImage = UIImage(named: "a.jpg")
                 // 画像をUIImageViewに設定する.
                 myImageView.image = myImage
-            }else if cnt == 300{
+            }else if score == 300{
                 myLabel2.text = "おにぎりとパンを買って家に帰る"
                 // 表示する画像を設定する.
                 let myImage = UIImage(named: "a.jpg")
                 // 画像をUIImageViewに設定する.
                 myImageView.image = myImage
-            }else if cnt == 200{
+            }else if score == 200{
                 myLabel2.text = "カップ麺を買って家に帰る"
                 // 表示する画像を設定する.
                 let myImage = UIImage(named: "a.jpg")
                 // 画像をUIImageViewに設定する.
                 myImageView.image = myImage
-            }else if cnt == 100{
+            }else if score == 100{
                 myLabel2.text = "食べないで寝よう"
                 // 表示する画像を設定する.
                 let myImage = UIImage(named: "a.jpg")

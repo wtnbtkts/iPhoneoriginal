@@ -16,7 +16,7 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet var textView: UITextView!
     
     //時間計測用の変数.
-    var cnt : Float = 10
+    var cnt : Float = 20
     
     //時間表示用のラベル.
     var myLabel : UILabel!
@@ -26,6 +26,9 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     //挑戦した回数
     var count = 0
+    
+    //スコア
+    var score2 : Int!
     
     //picker viewで選択したインデックス番号
     var selectedIndex = 0
@@ -52,6 +55,7 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        println("score2\(score2)")
         // Do any additional setup after loading the view, typically from a nib.
         
         // ラベルに受け取った遷移用の変数を渡す
@@ -59,7 +63,7 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
         //ラベルを作る.
         myLabel = UILabel(frame: CGRectMake(0,0,150,50))
-        myLabel.backgroundColor = UIColor.orangeColor()
+        myLabel.backgroundColor = UIColor.blackColor()
         myLabel.layer.masksToBounds = true
         myLabel.layer.cornerRadius = 20.0
         myLabel.text = "Time:\(cnt)"
@@ -102,19 +106,19 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         cnt -= 0.1
         if cnt < 0{
             cnt = 0
-            //performSegueToResult()
+            timer.invalidate()
+            performSegueToResult()
         }
         
         //桁数を指定して文字列を作る.
         let str = "Time:".stringByAppendingFormat("%.1f",cnt)
         myLabel.text = str
-        
     }
-    /*
+    
     func performSegueToResult() {
     performSegueWithIdentifier("toResultView", sender: nil)
     }
-    */
+    
     
     /*
     pickerに表示する列数を返すデータソースメソッド.
@@ -195,17 +199,34 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         if (hit == 4) {
             label.text = "クリア！"
             button.enabled = false
+            score2 = score2 + 200
             //correctAnswer++
         } else {
             label.text = "\(hit)個正解！"
             textView.text = "\(hit)個正解！\n" + textView.text
+            score2 = score2 + 0
         }
         /*
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
         appDelegate.correctAnswer = "correctAnswer+200" //appDelegateの変数を操作
         */
-        
     }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        score2 = appDelegate.ViewVal //score4にscore3の値を引き渡す
+    }
+    
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.ViewVal = score2 //score4の値を引き渡す
+    }
+    
+    
 }
 
 /*

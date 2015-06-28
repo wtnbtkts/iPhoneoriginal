@@ -16,6 +16,7 @@
 		A201F3C31B30A04900E60611 /* cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A201F3C21B30A04900E60611 /* cake.jpg */; };
 		A219B1B31B3A8957001E1783 /* kazuateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219B1B21B3A8957001E1783 /* kazuateViewController.swift */; };
 		A219B1B51B3A8AD7001E1783 /* santaku.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219B1B41B3A8AD7001E1783 /* santaku.swift */; };
+		A2415C051B3FAC1E00980F93 /* kazuate2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2415C041B3FAC1E00980F93 /* kazuate2ViewController.swift */; };
 		A256E63E1B3469BB00A681D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A256E63D1B3469BB00A681D1 /* Main.storyboard */; };
 		A256E6461B34733100A681D1 /* flashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256E6451B34733100A681D1 /* flashViewController.swift */; };
 		A256E64A1B35413200A681D1 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256E6491B35413200A681D1 /* ViewController2.swift */; };
@@ -56,6 +57,7 @@
 		A201F3C21B30A04900E60611 /* cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cake.jpg; sourceTree = "<group>"; };
 		A219B1B21B3A8957001E1783 /* kazuateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kazuateViewController.swift; sourceTree = "<group>"; };
 		A219B1B41B3A8AD7001E1783 /* santaku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = santaku.swift; sourceTree = "<group>"; };
+		A2415C041B3FAC1E00980F93 /* kazuate2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kazuate2ViewController.swift; sourceTree = "<group>"; };
 		A256E63D1B3469BB00A681D1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A256E6451B34733100A681D1 /* flashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flashViewController.swift; sourceTree = "<group>"; };
 		A256E6491B35413200A681D1 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
@@ -112,15 +114,16 @@
 			isa = PBXGroup;
 			children = (
 				A201F3A01B308C0200E60611 /* AppDelegate.swift */,
+				A2415C041B3FAC1E00980F93 /* kazuate2ViewController.swift */,
 				A2D92DA51B3C787900946685 /* kazuate3ViewController.swift */,
 				A219B1B21B3A8957001E1783 /* kazuateViewController.swift */,
 				A2D92DA71B3C7EB600946685 /* kazuateResultViewController.swift */,
 				A2DC39751B3BF80900DD272A /* QuizViewController.swift */,
 				A2DC39761B3BF80900DD272A /* ResultViewController.swift */,
 				A256E6491B35413200A681D1 /* ViewController2.swift */,
-				A256E63D1B3469BB00A681D1 /* Main.storyboard */,
 				A2A712591B3D1846009EA12D /* riceoutResultViewController.swift */,
 				A2A7125B1B3D1B2C009EA12D /* riceinResultViewController.swift */,
+				A256E63D1B3469BB00A681D1 /* Main.storyboard */,
 				A201F3A21B308C0200E60611 /* ViewController.swift */,
 				A2C1AD561B3301B900850821 /* Result3ViewController.swift */,
 				A256E6451B34733100A681D1 /* flashViewController.swift */,
@@ -282,6 +285,7 @@
 				A2A7125C1B3D1B2C009EA12D /* riceinResultViewController.swift in Sources */,
 				A256E64A1B35413200A681D1 /* ViewController2.swift in Sources */,
 				A2DC39781B3BF80900DD272A /* ResultViewController.swift in Sources */,
+				A2415C051B3FAC1E00980F93 /* kazuate2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

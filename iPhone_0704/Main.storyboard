@@ -5,6 +5,44 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="Mn5-Z5-TC9">
+            <objects>
+                <viewController id="b5o-h5-unT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jxP-yr-b9X"/>
+                        <viewControllerLayoutGuide type="bottom" id="jac-vZ-8yh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fsi-8R-u5t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="問題を解きなさい！！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mt-uR-vfC">
+                                <rect key="frame" x="52" y="201" width="294" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkF-OU-rVN">
+                                <rect key="frame" x="113" y="552" width="148" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="トップ画面へ">
+                                    <color key="titleColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="Pof-Nr-lgL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZEP-yz-2NA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-568.5" y="921.5"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="iPhone_0704" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,7 +73,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ag5-m3-gEM" kind="modal" id="T4X-L2-3Q2"/>
+                                    <segue destination="VJT-WA-cB8" kind="modal" id="M4R-TV-er4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDJ-9U-DMd">
@@ -46,7 +84,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Nf0-vf-wnB" kind="modal" id="bTa-6p-Gtk"/>
+                                    <segue destination="b5o-h5-unT" kind="modal" id="IYK-QM-rWD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EM-bK-YGX">
@@ -196,18 +234,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZR-Dn-1GK">
-                                <rect key="frame" x="115" y="602" width="158" height="45"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="次の問題へ">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="XyJ-yL-Ugz" kind="presentation" id="tsJ-zd-Yth"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uM-AQ-H2G">
                                 <rect key="frame" x="227" y="377" width="46" height="30"/>
                                 <state key="normal" title="決定">
@@ -222,9 +248,6 @@
                                 <state key="normal" title="リセット">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="ag5-m3-gEM" kind="modal" id="amF-2o-cbt"/>
-                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gW7-b8-YPw">
                                 <rect key="frame" x="74" y="415" width="240" height="174"/>
@@ -239,6 +262,18 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDs-ok-erd">
+                                <rect key="frame" x="108" y="607" width="158" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="次の問題へ">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XyJ-yL-Ugz" kind="modal" id="WIn-sI-dRi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -248,12 +283,12 @@
                         <outlet property="label" destination="8Ir-Cj-EpQ" id="9hr-6N-8g8"/>
                         <outlet property="pickerView" destination="kRx-vt-hDn" id="mFr-y4-VYT"/>
                         <outlet property="textView" destination="gW7-b8-YPw" id="f5Z-8s-YhS"/>
-                        <segue destination="XyJ-yL-Ugz" kind="push" identifier="segue" id="dPq-Ri-D6X"/>
+                        <segue destination="XyJ-yL-Ugz" kind="modal" identifier="toResultView2" id="BY1-7Q-1G9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qC-bl-1ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444.5" y="935.5"/>
+            <point key="canvasLocation" x="577.5" y="895.5"/>
         </scene>
         <!--Kazuate View Controller-->
         <scene sceneID="b2P-R8-XMp">
@@ -310,7 +345,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Gog-yq-hvW" kind="modal" id="MdC-Fs-KLh"/>
+                                    <segue destination="Gog-yq-hvW" kind="modal" id="yzd-aD-vYR"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wvE-8H-O5S">
@@ -343,79 +378,17 @@
                         <outlet property="label" destination="dvG-bg-BWh" id="IkB-ok-9UY"/>
                         <outlet property="pickerView" destination="9z6-p5-7tQ" id="Rdf-iY-PkN"/>
                         <outlet property="textView" destination="wvE-8H-O5S" id="AeL-bq-zCe"/>
+                        <segue destination="Gog-yq-hvW" kind="modal" identifier="toResultView" id="3qA-TX-vu8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gy7-VS-gae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1872.5" y="935.5"/>
+            <point key="canvasLocation" x="1029.5" y="895.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Paq-tf-f3F">
-            <objects>
-                <viewController id="Nf0-vf-wnB" customClass="ViewController" customModule="iPhone_0704" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Zij-Sc-GaP"/>
-                        <viewControllerLayoutGuide type="bottom" id="WM8-pr-ugB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="94Q-t7-QNW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fuji469.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DEZ-em-X2L">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あなたの今回の獲得賞金は？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unk-jD-SrX">
-                                <rect key="frame" x="74" y="69" width="227" height="117"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9U-Rn-75u">
-                                <rect key="frame" x="44" y="534" width="112" height="74"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="外食用">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="xsR-gg-a4C" kind="modal" id="zYr-zX-JMX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8T-ay-Cu8">
-                                <rect key="frame" x="223" y="534" width="112" height="74"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="自炊用">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Pg4-v5-kw8" kind="modal" id="U0U-Bz-1k9"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今日のご飯は？？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTL-De-FTW">
-                                <rect key="frame" x="0.0" y="432" width="375" height="117"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cx6-xe-0JH">
-                                <rect key="frame" x="166" y="285" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zHv-oA-MOT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="632.5" y="1719.5"/>
-        </scene>
-        <!--View Controller-->
+        <!--Riceout Result View Controller-->
         <scene sceneID="lz7-Hx-Jld">
             <objects>
-                <viewController id="xsR-gg-a4C" customClass="ViewController" customModule="iPhone_0704" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xsR-gg-a4C" customClass="riceoutResultViewController" customModule="iPhone_0704" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o0r-da-6dw"/>
                         <viewControllerLayoutGuide type="bottom" id="BmQ-Jc-oJ1"/>
@@ -454,7 +427,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HA3-RX-jJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054.5" y="1719.5"/>
+            <point key="canvasLocation" x="562.5" y="1679.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5ky-La-TBC">
@@ -500,7 +473,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RMT-Q7-VHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-37.5" y="1719.5"/>
+            <point key="canvasLocation" x="1467.5" y="1679.5"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="8Yi-4t-Rdp">
@@ -531,12 +504,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3K-X5-eW7">
-                                <rect key="frame" x="83" y="423" width="208" height="104"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tL9-UJ-4Y5">
                                 <rect key="frame" x="143" y="323" width="89" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -562,12 +529,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aap-5D-Xs4">
                                 <rect key="frame" x="210" y="585" width="148" height="66"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Lineへ投稿">
+                                <state key="normal" title="メールを送る">
                                     <color key="titleColor" red="0.0" green="1" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendLine:" destination="F0X-gl-asP" eventType="touchUpInside" id="QzJ-bI-PHO"/>
+                                    <action selector="share:" destination="F0X-gl-asP" eventType="touchUpInside" id="eww-Bn-bMh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPe-wR-ipd">
@@ -578,8 +545,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendLine:" destination="F0X-gl-asP" eventType="touchUpInside" id="mtx-cJ-rup"/>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" id="n3V-Jp-AQR"/>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="zKA-Rb-DNo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="参加人数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQ0-HF-Ks0">
@@ -593,6 +559,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3K-X5-eW7">
+                                <rect key="frame" x="62" y="427" width="250" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -616,12 +589,12 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-32" y="2511"/>
+            <point key="canvasLocation" x="-37.5" y="1679.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Ricein Result View Controller-->
         <scene sceneID="O4w-MO-ubH">
             <objects>
-                <viewController id="Pg4-v5-kw8" customClass="ViewController" customModule="iPhone_0704" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pg4-v5-kw8" customClass="riceinResultViewController" customModule="iPhone_0704" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Otl-sg-05k"/>
                         <viewControllerLayoutGuide type="bottom" id="IaK-KW-hKt"/>
@@ -660,7 +633,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rii-zr-4Mf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1461.5" y="1719.5"/>
+            <point key="canvasLocation" x="1029.5" y="1679.5"/>
         </scene>
         <!--Kazuate Result View Controller-->
         <scene sceneID="5i8-AB-wt1">
@@ -678,34 +651,65 @@
                                 <rect key="frame" x="-1" y="0.0" width="376" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="数当てゲーム" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gF-L0-22L">
-                                <rect key="frame" x="74" y="42" width="227" height="55"/>
+                                <rect key="frame" x="74" y="41" width="227" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awG-Uv-FgX">
-                                <rect key="frame" x="108" y="548" width="158" height="45"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="今日のご飯へ">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRY-sa-ZJK">
+                                <rect key="frame" x="70" y="239" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szw-FI-1dM">
+                                <rect key="frame" x="74" y="394" width="233" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZc-UK-WBA">
+                                <rect key="frame" x="45" y="542" width="112" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="外食用">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Nf0-vf-wnB" kind="modal" id="2Ib-vQ-1Va"/>
+                                    <segue destination="xsR-gg-a4C" kind="modal" id="QxC-tk-jqf"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRY-sa-ZJK">
-                                <rect key="frame" x="67" y="181" width="240" height="128"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33G-zx-zfj">
+                                <rect key="frame" x="224" y="542" width="112" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="自炊用">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Pg4-v5-kw8" kind="modal" id="zrk-jc-7yk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あなたの今回の獲得賞金は？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7b-4i-7P7">
+                                <rect key="frame" x="70" y="96" width="227" height="117"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今日のご飯は・・・？" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oz3-63-IlX">
+                                <rect key="frame" x="67" y="503" width="246" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="mylabel2" destination="szw-FI-1dM" id="thX-bX-pyU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iU3-1D-W4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2334.5" y="935.5"/>
+            <point key="canvasLocation" x="1467.5" y="895.5"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="PFm-OK-cLd">
@@ -836,24 +840,6 @@
             </objects>
             <point key="canvasLocation" x="1467.5" y="137.5"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="r7r-y2-wje">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ag5-m3-gEM" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FUb-jh-3F0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="VJT-WA-cB8" kind="relationship" relationship="rootViewController" id="0Rb-Ad-p1w"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UZr-wd-lrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="632" y="935"/>
-        </scene>
     </scenes>
     <resources>
         <image name="cake.jpg" width="937" height="788"/>
@@ -863,11 +849,10 @@
         <image name="nabe.png" width="400" height="343"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dPq-Ri-D6X"/>
-        <segue reference="amF-2o-cbt"/>
-        <segue reference="2Ib-vQ-1Va"/>
-        <segue reference="W06-lm-NuG"/>
-        <segue reference="n3V-Jp-AQR"/>
+        <segue reference="Pof-Nr-lgL"/>
         <segue reference="3xu-Uc-ueQ"/>
+        <segue reference="WIn-sI-dRi"/>
+        <segue reference="yzd-aD-vYR"/>
+        <segue reference="ZrS-UH-cTZ"/>
     </inferredMetricsTieBreakers>
 </document>
