@@ -271,7 +271,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="XyJ-yL-Ugz" kind="modal" id="WIn-sI-dRi"/>
+                                    <segue destination="XyJ-yL-Ugz" kind="show" id="WIn-sI-dRi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -283,7 +283,7 @@
                         <outlet property="label" destination="8Ir-Cj-EpQ" id="9hr-6N-8g8"/>
                         <outlet property="pickerView" destination="kRx-vt-hDn" id="mFr-y4-VYT"/>
                         <outlet property="textView" destination="gW7-b8-YPw" id="f5Z-8s-YhS"/>
-                        <segue destination="XyJ-yL-Ugz" kind="modal" identifier="toResultView2" id="BY1-7Q-1G9"/>
+                        <segue destination="XyJ-yL-Ugz" kind="show" identifier="toResultView2" id="BY1-7Q-1G9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qC-bl-1ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -345,7 +345,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Gog-yq-hvW" kind="modal" id="yzd-aD-vYR"/>
+                                    <segue destination="Gog-yq-hvW" kind="show" id="yzd-aD-vYR"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wvE-8H-O5S">
@@ -378,7 +378,7 @@
                         <outlet property="label" destination="dvG-bg-BWh" id="IkB-ok-9UY"/>
                         <outlet property="pickerView" destination="9z6-p5-7tQ" id="Rdf-iY-PkN"/>
                         <outlet property="textView" destination="wvE-8H-O5S" id="AeL-bq-zCe"/>
-                        <segue destination="Gog-yq-hvW" kind="modal" identifier="toResultView" id="3qA-TX-vu8"/>
+                        <segue destination="Gog-yq-hvW" kind="show" identifier="toResultView" id="3qA-TX-vu8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gy7-VS-gae" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -673,7 +673,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xsR-gg-a4C" kind="modal" id="QxC-tk-jqf"/>
+                                    <segue destination="xsR-gg-a4C" kind="show" id="QxC-tk-jqf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33G-zx-zfj">
@@ -683,7 +683,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Pg4-v5-kw8" kind="modal" id="zrk-jc-7yk"/>
+                                    <segue destination="Pg4-v5-kw8" kind="show" id="zrk-jc-7yk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あなたの今回の獲得賞金は？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7b-4i-7P7">
@@ -849,10 +849,10 @@
         <image name="nabe.png" width="400" height="343"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="yzd-aD-vYR"/>
+        <segue reference="BY1-7Q-1G9"/>
         <segue reference="Pof-Nr-lgL"/>
         <segue reference="3xu-Uc-ueQ"/>
-        <segue reference="WIn-sI-dRi"/>
-        <segue reference="yzd-aD-vYR"/>
         <segue reference="ZrS-UH-cTZ"/>
     </inferredMetricsTieBreakers>
 </document>

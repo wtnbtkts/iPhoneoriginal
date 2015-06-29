@@ -33,7 +33,8 @@ class kazuateResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        println("score\(score)")
+        //println("score\(score)")
+        /*
         // Labelを作成.
         let myLabel: UILabel = UILabel(frame: CGRectMake(0,0,250,100))
         
@@ -57,49 +58,13 @@ class kazuateResultViewController: UIViewController {
         
         // UIImageViewをViewに追加する.
         self.view.addSubview(myImageView)
+        */
         
         /*
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
         var correctAnswer = appDelegate.correctAnswer
         */
-        
         /*
-        // Labelに文字を代入.
-        if correctAnswer == 2 {
-            myLabel.text = "300円獲得!!"
-            // 表示する画像を設定する.
-            let myImage = UIImage(named: "5.gif")
-            // 画像をUIImageViewに設定する.
-            myImageView.image = myImage
-        }else if correctAnswer == 1{
-            myLabel.text = "200円獲得!!"
-            // 表示する画像を設定する.
-            let myImage = UIImage(named: "2.gif")
-            // 画像をUIImageViewに設定する.
-            myImageView.image = myImage
-        }else if correctAnswer == 1{
-            myLabel.text = "200円獲得!!"
-            // 表示する画像を設定する.
-            let myImage = UIImage(named: "2.gif")
-            // 画像をUIImageViewに設定する.
-            myImageView.image = myImage
-        }else if cnt == 0{
-            myLabel.text = "時間切れ"
-            // 表示する画像を設定する.
-            let myImage = UIImage(named: "a.jpg")
-            // 画像をUIImageViewに設定する.
-            myImageView.image = myImage
-        }
-        else {
-            myLabel.text = "0円獲得!!"
-            // 表示する画像を設定する.
-            let myImage = UIImage(named: "2.gif")
-            // 画像をUIImageViewに設定する.
-            myImageView.image = myImage
-        }
-*/
-        
-        
         
         // 文字の色を白にする.
         myLabel.textColor = UIColor.whiteColor()
@@ -118,6 +83,10 @@ class kazuateResultViewController: UIViewController {
         
         // ViewにLabelを追加.
         self.view.addSubview(myLabel)
+        */
+        
+        // 配置する座標を設定する.
+        mylabel2.layer.position = CGPoint(x: self.view.bounds.width/2,y: 10)
         
         // Do any additional setup after loading the view.
         
@@ -132,7 +101,8 @@ class kazuateResultViewController: UIViewController {
         super.viewDidDisappear(animated)
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         score = appDelegate.ViewVal //scorekekkaにscore4の値を引き渡す
-        mylabel2.text = "\(score)点獲得！"
+        mylabel2.text = "\(score)円獲得！"
+        println("score\(score)")
     }
     
     override func viewWillDisappear(animated: Bool) {
