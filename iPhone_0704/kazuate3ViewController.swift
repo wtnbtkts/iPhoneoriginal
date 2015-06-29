@@ -15,7 +15,7 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet var textView: UITextView!
     
     //時間計測用の変数.
-    var cnt : Float = 10
+    var cnt : Float = 20
     
     //時間表示用のラベル.
     var myLabel : UILabel!
@@ -149,17 +149,7 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         println("count : \(count)")
         
-        if (count == 5) {
-            var sum = 0
-            
-            for i in 0 ..< pickerView.numberOfComponents {
-                sum += answers[i]
-            }
-            
-            // sum = answers.reduce(0, combine: +)
-            
-            textView.text = "答えの数の合計は\(sum)だよ！\n" + textView.text
-        } else if (count == 10) {
+        if (count == 4) {
             var min = answers[0]
             
             for i in 0 ..< pickerView.numberOfComponents {
@@ -169,7 +159,32 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             }
             
             textView.text = "一番小さい数字は\(min)だよ！\n" + textView.text
+        } else if (count == 8) {
+            var sum = 0
+            
+            for i in 0 ..< pickerView.numberOfComponents {
+                sum += answers[i]
+            }
+            
+            // sum = answers.reduce(0, combine: +)
+            
+            textView.text = "答えの数の合計は\(sum)だよ！\n" + textView.text
+        }  else if (count == 12) {
+            var max = answers[0]
+            
+            for i in 0 ..< pickerView.numberOfComponents {
+                if (max < answers[i]){
+                    max = answers[i]
+                }
+            }
+            
+            textView.text = "一番大きい数字は\(max)だよ！\n" + textView.text
+        } else if (count == 16) {
+            var four = answers[0]
+            
+            textView.text = "3桁目の数字は\(answers[2])だよ！\n" + textView.text
         }
+        
         
         var hit = 0
         //        println("\(answers)")
@@ -192,13 +207,13 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             label.text = "クリア！"
             label.textColor = UIColor.redColor()
             button.enabled = false
-            score = 100
+            score = score + 300
             //correctAnswer++
             println("vvvvvvvvvvscore\(score)")
         } else {
             label.text = "\(hit)個正解！"
             textView.text = "\(hit)個正解！\n" + textView.text
-            score = 0
+            score = score + 0
             println("bbbbbbbbbscore\(score)")
         }
         println("aaaaaascore\(score)")
@@ -228,11 +243,24 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
     }
     
-    
+    /*
     override func viewWillDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appDelegate.ViewVal = score //textField.textの値を引き渡す
+    }*/
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        score = appDelegate.ViewVal //score4にscore3の値を引き渡す
+    }
+    
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.ViewVal = score //score4の値を引き渡す
     }
     
     

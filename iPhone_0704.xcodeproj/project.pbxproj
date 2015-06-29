@@ -17,6 +17,8 @@
 		A219B1B31B3A8957001E1783 /* kazuateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219B1B21B3A8957001E1783 /* kazuateViewController.swift */; };
 		A219B1B51B3A8AD7001E1783 /* santaku.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219B1B41B3A8AD7001E1783 /* santaku.swift */; };
 		A2415C051B3FAC1E00980F93 /* kazuate2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2415C041B3FAC1E00980F93 /* kazuate2ViewController.swift */; };
+		A2415C081B4113BC00980F93 /* girlsleep.png in Resources */ = {isa = PBXBuildFile; fileRef = A2415C061B4113BC00980F93 /* girlsleep.png */; };
+		A2415C091B4113BC00980F93 /* mansleep.png in Resources */ = {isa = PBXBuildFile; fileRef = A2415C071B4113BC00980F93 /* mansleep.png */; };
 		A256E63E1B3469BB00A681D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A256E63D1B3469BB00A681D1 /* Main.storyboard */; };
 		A256E6461B34733100A681D1 /* flashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256E6451B34733100A681D1 /* flashViewController.swift */; };
 		A256E64A1B35413200A681D1 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256E6491B35413200A681D1 /* ViewController2.swift */; };
@@ -58,6 +60,8 @@
 		A219B1B21B3A8957001E1783 /* kazuateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kazuateViewController.swift; sourceTree = "<group>"; };
 		A219B1B41B3A8AD7001E1783 /* santaku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = santaku.swift; sourceTree = "<group>"; };
 		A2415C041B3FAC1E00980F93 /* kazuate2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kazuate2ViewController.swift; sourceTree = "<group>"; };
+		A2415C061B4113BC00980F93 /* girlsleep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girlsleep.png; sourceTree = "<group>"; };
+		A2415C071B4113BC00980F93 /* mansleep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mansleep.png; sourceTree = "<group>"; };
 		A256E63D1B3469BB00A681D1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A256E6451B34733100A681D1 /* flashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flashViewController.swift; sourceTree = "<group>"; };
 		A256E6491B35413200A681D1 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				A2C1AD5A1B3308CB00850821 /* fuji245.jpg */,
 				A2C1AD5B1B3308CB00850821 /* fuji464.jpg */,
 				A2C1AD5C1B3308CB00850821 /* fuji469.jpg */,
+				A2415C061B4113BC00980F93 /* girlsleep.png */,
+				A2415C071B4113BC00980F93 /* mansleep.png */,
 				A201F39E1B308C0200E60611 /* Supporting Files */,
 			);
 			path = iPhone_0704;
@@ -249,10 +255,12 @@
 				A2C1AD5D1B3308CB00850821 /* fuji245.jpg in Resources */,
 				A201F3C31B30A04900E60611 /* cake.jpg in Resources */,
 				A201F3C11B308F4D00E60611 /* nabe.png in Resources */,
+				A2415C081B4113BC00980F93 /* girlsleep.png in Resources */,
 				A2C1AD5F1B3308CB00850821 /* fuji469.jpg in Resources */,
 				A201F3AB1B308C0200E60611 /* LaunchScreen.xib in Resources */,
 				A2C1AD591B33024C00850821 /* soroban.png in Resources */,
 				A256E63E1B3469BB00A681D1 /* Main.storyboard in Resources */,
+				A2415C091B4113BC00980F93 /* mansleep.png in Resources */,
 				A2C1AD5E1B3308CB00850821 /* fuji464.jpg in Resources */,
 				A201F3A81B308C0200E60611 /* Images.xcassets in Resources */,
 			);

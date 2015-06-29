@@ -16,7 +16,7 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet var textView: UITextView!
     
     //時間計測用の変数.
-    var cnt : Float = 20
+    var cnt : Float = 25
     
     //時間表示用のラベル.
     var myLabel : UILabel!
@@ -28,7 +28,7 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     var count = 0
     
     //スコア
-    var score2 : Int!
+    var score : Int!
     
     //picker viewで選択したインデックス番号
     var selectedIndex = 0
@@ -54,7 +54,7 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("score2\(score2)")
+        println("score\(score)")
         // Do any additional setup after loading the view, typically from a nib.
         
         // ラベルに受け取った遷移用の変数を渡す
@@ -156,17 +156,7 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
         println("count : \(count)")
         
-        if (count == 5) {
-            var sum = 0
-            
-            for i in 0 ..< pickerView.numberOfComponents {
-                sum += answers[i]
-            }
-            
-            // sum = answers.reduce(0, combine: +)
-            
-            textView.text = "答えの数の合計は\(sum)だよ！\n" + textView.text
-        } else if (count == 10) {
+        if (count == 3) {
             var min = answers[0]
             
             for i in 0 ..< pickerView.numberOfComponents {
@@ -176,7 +166,33 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             }
             
             textView.text = "一番小さい数字は\(min)だよ！\n" + textView.text
+        } else if (count == 6) {
+            var sum = 0
+            
+            for i in 0 ..< pickerView.numberOfComponents {
+                sum += answers[i]
+            }
+            
+            // sum = answers.reduce(0, combine: +)
+            
+            textView.text = "答えの数の合計は\(sum)だよ！\n" + textView.text
+        }  else if (count == 9) {
+            var max = answers[0]
+            
+            for i in 0 ..< pickerView.numberOfComponents {
+                if (max < answers[i]){
+                    max = answers[i]
+                }
+            }
+            
+            textView.text = "一番大きい数字は\(max)だよ！\n" + textView.text
+        } else if (count == 12) {
+            var four = answers[0]
+            
+            textView.text = "4桁目の数字は\(answers[3])だよ！\n" + textView.text
         }
+        
+        
         
         var hit = 0
         //        println("\(answers)")
@@ -198,12 +214,12 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         if (hit == 4) {
             label.text = "クリア！"
             button.enabled = false
-            score2 = score2 + 200
+            score = score + 400
             //correctAnswer++
         } else {
             label.text = "\(hit)個正解！"
             textView.text = "\(hit)個正解！\n" + textView.text
-            score2 = score2 + 0
+            score = score + 0
         }
         /*
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
@@ -215,14 +231,14 @@ class kazuateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     override func viewWillAppear(animated: Bool) {
         super.viewDidDisappear(animated)
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        score2 = appDelegate.ViewVal //score4にscore3の値を引き渡す
+        score = appDelegate.ViewVal //score4にscore3の値を引き渡す
     }
     
     
     override func viewWillDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appDelegate.ViewVal = score2 //score4の値を引き渡す
+        appDelegate.ViewVal = score //score4の値を引き渡す
     }
     
     

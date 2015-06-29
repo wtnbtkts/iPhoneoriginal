@@ -11,7 +11,7 @@ import UIKit
 class ResultViewController: UIViewController {
      var correctAnswer:Int = 0
     
-         var cnt : Float = 0
+    var cnt : Float = 0
     
     @IBOutlet var label: UILabel!
     
