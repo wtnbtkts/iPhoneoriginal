@@ -50,51 +50,7 @@ class ResultViewController: UIViewController {
         // UIImageViewをViewに追加する.
         self.view.addSubview(myImageView)
         
-            // Labelに文字を代入.
-            if correctAnswer == 5 {
-                myLabel.text = "5問中5問正解!完璧だね!!"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "5.gif")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }else if correctAnswer == 4{
-                myLabel.text = "5問中4問正解!次は満点だ!!"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "4.gif")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }else if correctAnswer == 3{
-                myLabel.text = "5問中3問正解!復習しよう!!"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "3.gif")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }else if correctAnswer == 2{
-                myLabel.text = "5問中2問正解!次は半分以上!!"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "2.gif")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }else if correctAnswer == 1{
-                myLabel.text = "5問中1問正解!もっと勉強!!"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "2.gif")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }else if cnt == 0{
-                myLabel.text = "時間切れ"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "a.jpg")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }
-            else {
-                myLabel.text = "1問も合ってなかったよ!"
-                // 表示する画像を設定する.
-                let myImage = UIImage(named: "2.gif")
-                // 画像をUIImageViewに設定する.
-                myImageView.image = myImage
-            }
+        
         
         
             // 文字の色を白にする.
@@ -125,5 +81,20 @@ class ResultViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    /*
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        score = appDelegate.ViewVal //scorekekkaにscore4の値を引き渡す
+        mylabel2.text = "予算\(score)円！"
+        println("score\(score)")
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.ViewVal = score //scorekekkaの値を引き渡す
+    }
+*/
 
 }

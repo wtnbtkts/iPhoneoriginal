@@ -159,7 +159,7 @@ class kazuate2ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             }
             
             textView.text = "一番小さい数字は\(min)だよ！\n" + textView.text
-        } else if (count == 5) {
+        } else if (count == 4) {
             var sum = 0
             
             for i in 0 ..< pickerView.numberOfComponents {
@@ -169,7 +169,7 @@ class kazuate2ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             // sum = answers.reduce(0, combine: +)
             
             textView.text = "答えの数の合計は\(sum)だよ！\n" + textView.text
-        } else if (count == 10) {
+        } else if (count == 6) {
             var max = answers[0]
             
             for i in 0 ..< pickerView.numberOfComponents {
@@ -238,13 +238,13 @@ class kazuate2ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             label.text = "クリア！"
             label.textColor = UIColor.redColor()
             button.enabled = false
-            score = 200
+            score = score + 200
             //correctAnswer++
             println("vvvvvvvvvvscore\(score)")
         } else {
             label.text = "\(hit)個正解！"
             textView.text = "\(hit)個正解！\n" + textView.text
-            score = 0
+            score = score + 0
             println("bbbbbbbbbscore\(score)")
         }
         println("aaaaaascore\(score)")
@@ -267,19 +267,26 @@ class kazuate2ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "segue") {
             // SecondViewControllerクラスをインスタンス化してsegue（画面遷移）で値を渡せるようにバンドルする
-            var secondView : kazuateViewController = segue.destinationViewController as! kazuateViewController
+            var secondView : kazuate4ViewController = segue.destinationViewController as! kazuate4ViewController
             // secondView（バンドルされた変数）に受け取り用の変数を引数とし_paramを渡す（_paramには渡したい値）
             // この時SecondViewControllerにて受け取る同型の変数を用意しておかないとエラーになる
             secondView._second = _param
         }
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        score = appDelegate.ViewVal //score4にscore3の値を引き渡す
+    }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appDelegate.ViewVal = score //textField.textの値を引き渡す
     }
+    
+    
     
     
 }

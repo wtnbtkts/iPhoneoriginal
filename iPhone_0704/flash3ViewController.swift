@@ -8,7 +8,7 @@
 
 import UIKit
 
-class flashViewController: UIViewController {
+class flash3ViewController: UIViewController {
 
     @IBOutlet var label: UILabel!
     @IBOutlet var textField: UITextField!
@@ -26,7 +26,7 @@ class flashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "getRandomNumber", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "getRandomNumber", userInfo: nil, repeats: true)
         /*
         timer = [NSTimer scheduledTimerWithTimeInterval:1
         target:self
@@ -38,9 +38,9 @@ class flashViewController: UIViewController {
     
     func getRandomNumber() {
         count = count + 1;
-        if(count <= 5){
+        if(count <= 3){
             var random:Int!
-            random = Int(arc4random() % UInt32(10))
+            random = Int(arc4random() % UInt32(100))
             //random = arc4random() % 100;
             sum = sum + random;
             label.text = NSString(format:"%d", random) as String
@@ -87,19 +87,24 @@ class flashViewController: UIViewController {
      @IBAction func ok(button:UIButton){
         if(textField.text.toInt() == sum){
             label.text = "正解！"
-            score = 100
+            score = score + 300
         }else{
             label.text = "残念！"
-            score = 0
+            score = score + 0
         }
+    }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        score = appDelegate.ViewVal //score4にscore3の値を引き渡す
     }
     
     
     override func viewWillDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appDelegate.ViewVal = score //フラッシュ暗算の値を引き渡す
+        appDelegate.ViewVal = score //score4の値を引き渡す
     }
 }
 
