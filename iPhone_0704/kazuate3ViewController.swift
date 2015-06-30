@@ -61,7 +61,7 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         myLabel.textColor = UIColor.whiteColor()
         myLabel.shadowColor = UIColor.grayColor()
         myLabel.textAlignment = NSTextAlignment.Center
-        myLabel.layer.position = CGPoint(x: 280,y: 130)
+        myLabel.layer.position = CGPoint(x: 290,y: 70)
         self.view.backgroundColor = UIColor.cyanColor()
         self.view.addSubview(myLabel)
         
@@ -239,7 +239,7 @@ class kazuate3ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             var secondView : kazuate4ViewController = segue.destinationViewController as! kazuate4ViewController
             // secondView（バンドルされた変数）に受け取り用の変数を引数とし_paramを渡す（_paramには渡したい値）
             // この時SecondViewControllerにて受け取る同型の変数を用意しておかないとエラーになる
-            secondView._second = _param
+            //secondView._second = _param
         }
     }
     

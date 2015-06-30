@@ -38,7 +38,7 @@ class flash3ViewController: UIViewController {
     
     func getRandomNumber() {
         count = count + 1;
-        if(count <= 3){
+        if(count <= 5){
             var random:Int!
             random = Int(arc4random() % UInt32(100))
             //random = arc4random() % 100;
@@ -87,7 +87,7 @@ class flash3ViewController: UIViewController {
      @IBAction func ok(button:UIButton){
         if(textField.text.toInt() == sum){
             label.text = "正解！"
-            score = score + 300
+            score = score + 400
         }else{
             label.text = "残念！"
             score = score + 0

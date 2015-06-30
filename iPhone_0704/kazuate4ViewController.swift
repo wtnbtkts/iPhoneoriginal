@@ -50,7 +50,7 @@ class kazuate4ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var _myLabel: UILabel!
     
     /// 遷移時の受け取り用の変数
-    var _second:String = ""
+    //var _second:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +58,7 @@ class kazuate4ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         // Do any additional setup after loading the view, typically from a nib.
         
         // ラベルに受け取った遷移用の変数を渡す
-        _myLabel.text = _second
+        //_myLabel.text = _second
         
         //ラベルを作る.
         myLabel = UILabel(frame: CGRectMake(0,0,150,50))
@@ -69,7 +69,7 @@ class kazuate4ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         myLabel.textColor = UIColor.whiteColor()
         myLabel.shadowColor = UIColor.grayColor()
         myLabel.textAlignment = NSTextAlignment.Center
-        myLabel.layer.position = CGPoint(x: 280,y: 130)
+        myLabel.layer.position = CGPoint(x: 290,y: 70)
         self.view.backgroundColor = UIColor.cyanColor()
         self.view.addSubview(myLabel)
         
