@@ -33,6 +33,7 @@ class riceoutResultViewController: UIViewController {
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         score = appDelegate.ViewVal //scorekekkaにscore4の値を引き渡す
         mylabel2.text = "予算\(score)円！"
+        mylabel2.textColor = UIColor.redColor()
         println("score\(score)")
     }
     

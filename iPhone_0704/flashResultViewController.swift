@@ -35,6 +35,7 @@ class flashResultViewController: UIViewController {
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         score = appDelegate.ViewVal //scorekekkaにscore4の値を引き渡す
         mylabel2.text = "\(score)円獲得！"
+        mylabel2.textColor = UIColor.redColor()
         println("score\(score)")
     }
     

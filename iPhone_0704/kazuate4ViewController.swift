@@ -213,8 +213,9 @@ class kazuate4ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         if (hit == 4) {
             label.text = "クリア！"
+            label.textColor = UIColor.redColor()
             button.enabled = false
-            score = score + 400
+            score = score + 300
             //correctAnswer++
         } else {
             label.text = "\(hit)個正解！"

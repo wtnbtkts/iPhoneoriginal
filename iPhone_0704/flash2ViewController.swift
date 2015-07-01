@@ -26,7 +26,7 @@ class flash2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "getRandomNumber", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.4, target: self, selector: "getRandomNumber", userInfo: nil, repeats: true)
         /*
         timer = [NSTimer scheduledTimerWithTimeInterval:1
         target:self
@@ -38,7 +38,7 @@ class flash2ViewController: UIViewController {
     
     func getRandomNumber() {
         count = count + 1;
-        if(count <= 7){
+        if(count <= 5){
             var random:Int!
             random = Int(arc4random() % UInt32(10))
             //random = arc4random() % 100;
@@ -87,7 +87,8 @@ class flash2ViewController: UIViewController {
      @IBAction func ok(button:UIButton){
         if(textField.text.toInt() == sum){
             label.text = "正解！"
-            score = score + 300
+            label.textColor = UIColor.redColor()
+            score = score + 200
         }else{
             label.text = "残念！"
             score = score + 0

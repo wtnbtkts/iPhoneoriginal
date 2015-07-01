@@ -87,6 +87,7 @@ class flash4ViewController: UIViewController {
      @IBAction func ok(button:UIButton){
         if(textField.text.toInt() == sum){
             label.text = "正解！"
+            label.textColor = UIColor.redColor()
             score = score + 500
         }else{
             label.text = "残念！"

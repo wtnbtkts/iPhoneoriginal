@@ -238,7 +238,7 @@ class kazuate2ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             label.text = "クリア！"
             label.textColor = UIColor.redColor()
             button.enabled = false
-            score = score + 200
+            score = score + 100
             //correctAnswer++
             println("vvvvvvvvvvscore\(score)")
         } else {

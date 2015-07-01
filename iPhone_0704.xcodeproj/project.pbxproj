@@ -23,6 +23,10 @@
 		A2415C111B419D5D00980F93 /* flash4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2415C0F1B419D5D00980F93 /* flash4ViewController.swift */; };
 		A2415C131B419E6A00980F93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2415C121B419E6A00980F93 /* Main.storyboard */; };
 		A2415C151B41A7B800980F93 /* flashResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2415C141B41A7B800980F93 /* flashResultViewController.swift */; };
+		A246BAAD1B43B683006ED31F /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = A246BAAA1B43B683006ED31F /* car.png */; };
+		A246BAAE1B43B683006ED31F /* rocket.png in Resources */ = {isa = PBXBuildFile; fileRef = A246BAAB1B43B683006ED31F /* rocket.png */; };
+		A246BAAF1B43B683006ED31F /* ufo.png in Resources */ = {isa = PBXBuildFile; fileRef = A246BAAC1B43B683006ED31F /* ufo.png */; };
+		A246BAB11B43B68D006ED31F /* plane.png in Resources */ = {isa = PBXBuildFile; fileRef = A246BAB01B43B68D006ED31F /* plane.png */; };
 		A256E6461B34733100A681D1 /* flashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256E6451B34733100A681D1 /* flashViewController.swift */; };
 		A256E64A1B35413200A681D1 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256E6491B35413200A681D1 /* ViewController2.swift */; };
 		A2A7125A1B3D1846009EA12D /* riceoutResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A712591B3D1846009EA12D /* riceoutResultViewController.swift */; };
@@ -66,6 +70,10 @@
 		A2415C0F1B419D5D00980F93 /* flash4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flash4ViewController.swift; sourceTree = "<group>"; };
 		A2415C121B419E6A00980F93 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A2415C141B41A7B800980F93 /* flashResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flashResultViewController.swift; sourceTree = "<group>"; };
+		A246BAAA1B43B683006ED31F /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		A246BAAB1B43B683006ED31F /* rocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rocket.png; sourceTree = "<group>"; };
+		A246BAAC1B43B683006ED31F /* ufo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ufo.png; sourceTree = "<group>"; };
+		A246BAB01B43B68D006ED31F /* plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane.png; sourceTree = "<group>"; };
 		A256E6451B34733100A681D1 /* flashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flashViewController.swift; sourceTree = "<group>"; };
 		A256E6491B35413200A681D1 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		A2A712591B3D1846009EA12D /* riceoutResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = riceoutResultViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +142,10 @@
 				A2415C121B419E6A00980F93 /* Main.storyboard */,
 				A201F3A71B308C0200E60611 /* Images.xcassets */,
 				A201F3A91B308C0200E60611 /* LaunchScreen.xib */,
+				A246BAAA1B43B683006ED31F /* car.png */,
+				A246BAAB1B43B683006ED31F /* rocket.png */,
+				A246BAB01B43B68D006ED31F /* plane.png */,
+				A246BAAC1B43B683006ED31F /* ufo.png */,
 				A201F3C01B308F4D00E60611 /* nabe.png */,
 				A201F3C21B30A04900E60611 /* cake.jpg */,
 				A2C1AD581B33024C00850821 /* soroban.png */,
@@ -252,10 +264,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A246BAAD1B43B683006ED31F /* car.png in Resources */,
 				A2C1AD5D1B3308CB00850821 /* fuji245.jpg in Resources */,
+				A246BAB11B43B68D006ED31F /* plane.png in Resources */,
 				A201F3C31B30A04900E60611 /* cake.jpg in Resources */,
 				A201F3C11B308F4D00E60611 /* nabe.png in Resources */,
+				A246BAAF1B43B683006ED31F /* ufo.png in Resources */,
 				A2415C081B4113BC00980F93 /* girlsleep.png in Resources */,
+				A246BAAE1B43B683006ED31F /* rocket.png in Resources */,
 				A2C1AD5F1B3308CB00850821 /* fuji469.jpg in Resources */,
 				A2415C131B419E6A00980F93 /* Main.storyboard in Resources */,
 				A201F3AB1B308C0200E60611 /* LaunchScreen.xib in Resources */,
