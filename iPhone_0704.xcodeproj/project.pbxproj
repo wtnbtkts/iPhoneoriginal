@@ -27,6 +27,10 @@
 		A246BAAE1B43B683006ED31F /* rocket.png in Resources */ = {isa = PBXBuildFile; fileRef = A246BAAB1B43B683006ED31F /* rocket.png */; };
 		A246BAAF1B43B683006ED31F /* ufo.png in Resources */ = {isa = PBXBuildFile; fileRef = A246BAAC1B43B683006ED31F /* ufo.png */; };
 		A246BAB11B43B68D006ED31F /* plane.png in Resources */ = {isa = PBXBuildFile; fileRef = A246BAB01B43B68D006ED31F /* plane.png */; };
+		A246BAB31B43C173006ED31F /* yakei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A246BAB21B43C173006ED31F /* yakei.jpg */; };
+		A246BAB71B43C33F006ED31F /* sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A246BAB61B43C33F006ED31F /* sky.jpg */; };
+		A246BABA1B43C3E1006ED31F /* skya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A246BAB81B43C3E1006ED31F /* skya.jpg */; };
+		A246BABB1B43C3E1006ED31F /* skyb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A246BAB91B43C3E1006ED31F /* skyb.jpg */; };
 		A256E6461B34733100A681D1 /* flashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256E6451B34733100A681D1 /* flashViewController.swift */; };
 		A256E64A1B35413200A681D1 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256E6491B35413200A681D1 /* ViewController2.swift */; };
 		A2A7125A1B3D1846009EA12D /* riceoutResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A712591B3D1846009EA12D /* riceoutResultViewController.swift */; };
@@ -74,6 +78,10 @@
 		A246BAAB1B43B683006ED31F /* rocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rocket.png; sourceTree = "<group>"; };
 		A246BAAC1B43B683006ED31F /* ufo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ufo.png; sourceTree = "<group>"; };
 		A246BAB01B43B68D006ED31F /* plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane.png; sourceTree = "<group>"; };
+		A246BAB21B43C173006ED31F /* yakei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yakei.jpg; sourceTree = "<group>"; };
+		A246BAB61B43C33F006ED31F /* sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky.jpg; sourceTree = "<group>"; };
+		A246BAB81B43C3E1006ED31F /* skya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skya.jpg; sourceTree = "<group>"; };
+		A246BAB91B43C3E1006ED31F /* skyb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skyb.jpg; sourceTree = "<group>"; };
 		A256E6451B34733100A681D1 /* flashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flashViewController.swift; sourceTree = "<group>"; };
 		A256E6491B35413200A681D1 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		A2A712591B3D1846009EA12D /* riceoutResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = riceoutResultViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +162,10 @@
 				A2C1AD5C1B3308CB00850821 /* fuji469.jpg */,
 				A2415C061B4113BC00980F93 /* girlsleep.png */,
 				A2415C071B4113BC00980F93 /* mansleep.png */,
+				A246BAB21B43C173006ED31F /* yakei.jpg */,
+				A246BAB61B43C33F006ED31F /* sky.jpg */,
+				A246BAB81B43C3E1006ED31F /* skya.jpg */,
+				A246BAB91B43C3E1006ED31F /* skyb.jpg */,
 				A201F39E1B308C0200E60611 /* Supporting Files */,
 			);
 			path = iPhone_0704;
@@ -271,10 +283,14 @@
 				A201F3C11B308F4D00E60611 /* nabe.png in Resources */,
 				A246BAAF1B43B683006ED31F /* ufo.png in Resources */,
 				A2415C081B4113BC00980F93 /* girlsleep.png in Resources */,
+				A246BABB1B43C3E1006ED31F /* skyb.jpg in Resources */,
 				A246BAAE1B43B683006ED31F /* rocket.png in Resources */,
 				A2C1AD5F1B3308CB00850821 /* fuji469.jpg in Resources */,
 				A2415C131B419E6A00980F93 /* Main.storyboard in Resources */,
 				A201F3AB1B308C0200E60611 /* LaunchScreen.xib in Resources */,
+				A246BAB31B43C173006ED31F /* yakei.jpg in Resources */,
+				A246BAB71B43C33F006ED31F /* sky.jpg in Resources */,
+				A246BABA1B43C3E1006ED31F /* skya.jpg in Resources */,
 				A2C1AD591B33024C00850821 /* soroban.png in Resources */,
 				A2415C091B4113BC00980F93 /* mansleep.png in Resources */,
 				A2C1AD5E1B3308CB00850821 /* fuji464.jpg in Resources */,

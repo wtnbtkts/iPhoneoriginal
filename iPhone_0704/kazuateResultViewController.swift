@@ -97,6 +97,7 @@ class kazuateResultViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     override func viewWillAppear(animated: Bool) {
         super.viewDidDisappear(animated)
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate

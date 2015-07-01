@@ -62,7 +62,7 @@ class kazuate2ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         myLabel.shadowColor = UIColor.grayColor()
         myLabel.textAlignment = NSTextAlignment.Center
         myLabel.layer.position = CGPoint(x: 290,y: 70)
-        self.view.backgroundColor = UIColor.cyanColor()
+        //self.view.backgroundColor = UIColor.cyanColor()
         self.view.addSubview(myLabel)
         
         //タイマーを作る.

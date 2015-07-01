@@ -33,7 +33,7 @@ class riceinResultViewController: UIViewController {
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         score = appDelegate.ViewVal //scorekekkaにscore4の値を引き渡す
         mylabel2.text = "予算\(score / 2)円！"
-        mylabel2.textColor = UIColor.blueColor()
+        mylabel2.textColor = UIColor.greenColor()
         println("score\(score)")
     }
     

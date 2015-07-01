@@ -188,6 +188,35 @@ class riceoutResultViewController: UIViewController {
         mylabel2.layer.position = CGPoint(x: self.view.bounds.width/2,y: 10)
     }
     
+    // 結果をLINEに送る
+    @IBAction func share2(sender: UIButton) {
+        
+        // 共有する項目
+        let shareText = "今日のご飯◯◯にしよう！\n19:00に△△集合！\n"
+        let shareWebsite = NSURL(string: "https://life-is-tech.com/")!
+        let shareImage = UIImage(named: "nabe.png")!
+        
+        let activityItems = [shareText, shareWebsite, shareImage]
+        
+        // 初期化処理
+        let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        
+        // 使用しないアクティビティタイプ
+        let excludedActivityTypes = [
+            UIActivityTypePostToWeibo,
+            UIActivityTypeSaveToCameraRoll,
+            UIActivityTypePrint
+        ]
+        
+        activityVC.excludedActivityTypes = excludedActivityTypes
+        
+        // UIActivityViewControllerを表示
+        self.presentViewController(activityVC, animated: true, completion: nil)
+    }
+
+    
+    
+    
     /*
     override func viewWillAppear(animated: Bool) {
         super.viewDidDisappear(animated)
