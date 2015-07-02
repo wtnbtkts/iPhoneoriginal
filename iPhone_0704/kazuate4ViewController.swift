@@ -8,12 +8,17 @@
 
 
 import UIKit
+import AVFoundation
 
-class kazuate4ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class kazuate4ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource ,AVAudioPlayerDelegate {
     
     @IBOutlet var pickerView: UIPickerView!
     @IBOutlet var label: UILabel!
     @IBOutlet var textView: UITextView!
+    
+    var audioPlayer : AVAudioPlayer!
+    var soundCount:Int=0
+    var filenames:[String] = ["drum2"]
     
     //時間計測用の変数.
     var cnt : Float = 25
@@ -240,6 +245,22 @@ class kazuate4ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         super.viewDidDisappear(animated)
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appDelegate.ViewVal = score //score4の値を引き渡す
+    }
+    
+    func playerWithFilename(filenames:String) -> AVAudioPlayer {
+        let soundFilePath = NSBundle.mainBundle().pathForResource(filenames, ofType: "mp3")
+        let fileURL : NSURL = NSURL(fileURLWithPath:soundFilePath!)!
+        
+        
+        //AVAudioPlayerのインスタンス化.!
+        return AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+    }
+    
+    @IBAction func playButton(){
+        //audioPlayer = playerWithFilename(filenames)
+        audioPlayer = playerWithFilename(filenames[soundCount])
+        audioPlayer.numberOfLoops = soundCount
+        audioPlayer.play()
     }
     
     

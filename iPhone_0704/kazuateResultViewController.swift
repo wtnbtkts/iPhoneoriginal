@@ -7,7 +7,74 @@
 //
 
 import UIKit
+import AVFoundation
 
+class kazuateResultViewController: UIViewController, UIPickerViewDelegate,AVAudioPlayerDelegate {
+    var audioPlayer : AVAudioPlayer!
+    var soundCount:Int=0
+    //var stations = ["わずか、1問正解！", "まあ、2問正解！", "おお、3問正解！", "さすが、4問正解！"]
+    //var filenames:[String] = ["dog", "cat", "rain", "wave"]
+    var filenames:[String] = ["trumpet1"]
+    
+    //スコア
+    var score : Int!
+    //スコア表示
+    @IBOutlet var mylabel2 : UILabel!
+    
+    private var myImageView: UIImageView!
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // 配置する座標を設定する.
+        mylabel2.layer.position = CGPoint(x: self.view.bounds.width/2,y: 10)
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        score = appDelegate.ViewVal //scorekekkaにscore4の値を引き渡す
+        mylabel2.text = "\(score)円獲得！"
+        mylabel2.textColor = UIColor.redColor()
+        println("score\(score)")
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.ViewVal = score //scorekekkaの値を引き渡す
+    }
+    
+    func playerWithFilename(filenames:String) -> AVAudioPlayer {
+        let soundFilePath = NSBundle.mainBundle().pathForResource(filenames, ofType: "mp3")
+        let fileURL : NSURL = NSURL(fileURLWithPath:soundFilePath!)!
+        
+        
+        //AVAudioPlayerのインスタンス化.!
+        return AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+    }
+    
+    @IBAction func playButton(){
+        //audioPlayer = playerWithFilename(filenames)
+        audioPlayer = playerWithFilename(filenames[soundCount])
+        audioPlayer.numberOfLoops = soundCount
+        audioPlayer.play()
+    }
+}
+
+
+
+
+
+
+/*
 class kazuateResultViewController: UIViewController {
     var correctAnswer:Int = 0
     
@@ -25,65 +92,10 @@ class kazuateResultViewController: UIViewController {
     @IBOutlet var mylabel2 : UILabel!
     
     private var myImageView: UIImageView!
-    
-    //var correctAnswer :
-    
 
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //println("score\(score)")
-        /*
-        // Labelを作成.
-        let myLabel: UILabel = UILabel(frame: CGRectMake(0,0,250,100))
-        
-        // 背景をオレンジ色にする.
-        myLabel.backgroundColor = UIColor.redColor()
-        
-        // 枠を丸くする.
-        myLabel.layer.masksToBounds = true
-        
-        // コーナーの半径.
-        myLabel.layer.cornerRadius = 20.0
-        
-        // UIImageViewを作成する.
-        myImageView = UIImageView(frame: CGRectMake(0,0,100,120))
-        
-        
-        // 画像の表示する座標を指定する.
-        //myImageView.layer.position = CGPoint(x: self.view.bounds.width/2, y: 200.0)
-        //UISwitch *sw = [[[UISwitch alloc] init] autorelease];
-        myImageView.layer.position = CGPointMake(150, 350);
-        
-        // UIImageViewをViewに追加する.
-        self.view.addSubview(myImageView)
-        */
-        
-        /*
-        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
-        var correctAnswer = appDelegate.correctAnswer
-        */
-        /*
-        
-        // 文字の色を白にする.
-        myLabel.textColor = UIColor.whiteColor()
-        
-        // 文字の影の色をグレーにする.
-        myLabel.shadowColor = UIColor.grayColor()
-        
-        // Textを中央寄せにする.
-        myLabel.textAlignment = NSTextAlignment.Center
-        
-        // 配置する座標を設定する.
-        myLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 200)
-        
-        // Viewの背景色を青にする.
-        self.view.backgroundColor = UIColor.cyanColor()
-        
-        // ViewにLabelを追加.
-        self.view.addSubview(myLabel)
-        */
         
         // 配置する座標を設定する.
         mylabel2.layer.position = CGPoint(x: self.view.bounds.width/2,y: 10)
@@ -115,4 +127,4 @@ class kazuateResultViewController: UIViewController {
     
     
     
-}
+}*/

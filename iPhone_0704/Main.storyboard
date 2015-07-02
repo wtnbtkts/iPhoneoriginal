@@ -81,7 +81,7 @@
                                 <rect key="frame" x="0.0" y="541" width="375" height="59"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="今日のご飯は？">
+                                <state key="normal" title="ご飯を食べる">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -99,7 +99,7 @@
                                     <segue destination="F0X-gl-asP" kind="modal" id="TKy-xn-f7F"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's decide today's rice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ie-5F-xel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今日のご飯は？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ie-5F-xel">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="154"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
@@ -373,6 +373,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="playButton" destination="XyJ-yL-Ugz" eventType="touchUpInside" id="hF7-fa-9P6"/>
                                     <segue destination="Gog-yq-hvW" kind="show" id="oLt-Vk-hOE"/>
                                 </connections>
                             </button>
@@ -462,6 +463,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="playButton" destination="xsR-gg-a4C" eventType="touchUpInside" id="t6M-to-WQz"/>
                                     <segue destination="eVl-lQ-t9D" kind="modal" id="W06-lm-NuG"/>
                                 </connections>
                             </button>
@@ -738,6 +740,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="playButton" destination="Pg4-v5-kw8" eventType="touchUpInside" id="ojh-WN-ZYg"/>
                                     <segue destination="eVl-lQ-t9D" kind="show" id="ZrS-UH-cTZ"/>
                                 </connections>
                             </button>
@@ -795,6 +798,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="playButton" destination="Gog-yq-hvW" eventType="touchUpInside" id="hph-eL-Rzq"/>
                                     <segue destination="xsR-gg-a4C" kind="show" id="QxC-tk-jqf"/>
                                 </connections>
                             </button>
@@ -807,6 +811,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="playButton" destination="Gog-yq-hvW" eventType="touchUpInside" id="f93-I4-hRx"/>
                                     <segue destination="Pg4-v5-kw8" kind="show" id="zrk-jc-7yk"/>
                                 </connections>
                             </button>

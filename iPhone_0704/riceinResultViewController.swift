@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
-class riceinResultViewController: UIViewController {
+class riceinResultViewController: UIViewController, UIPickerViewDelegate,AVAudioPlayerDelegate {
+    
+    var audioPlayer : AVAudioPlayer!
+    var soundCount:Int=0
+    var filenames:[String] = ["miss2"]
     
     //時間計測用の変数.
     var cnt : Float = 5
@@ -188,6 +193,23 @@ class riceinResultViewController: UIViewController {
         mylabel2.layer.position = CGPoint(x: self.view.bounds.width/2,y: 10)
     }
     
+    func playerWithFilename(filenames:String) -> AVAudioPlayer {
+        let soundFilePath = NSBundle.mainBundle().pathForResource(filenames, ofType: "mp3")
+        let fileURL : NSURL = NSURL(fileURLWithPath:soundFilePath!)!
+        
+        
+        //AVAudioPlayerのインスタンス化.!
+        return AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+    }
+    
+    @IBAction func playButton(){
+        //audioPlayer = playerWithFilename(filenames)
+        audioPlayer = playerWithFilename(filenames[soundCount])
+        audioPlayer.numberOfLoops = soundCount
+        audioPlayer.play()
+    }
+}
+
     /*
     override func viewWillAppear(animated: Bool) {
     super.viewDidDisappear(animated)
@@ -203,6 +225,6 @@ class riceinResultViewController: UIViewController {
     appDelegate.ViewVal = score //scorekekkaの値を引き渡す
     }
     */
-}
+
 
 
