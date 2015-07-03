@@ -27,13 +27,6 @@ class flash4ViewController: UIViewController {
         super.viewDidLoad()
         
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "getRandomNumber", userInfo: nil, repeats: true)
-        /*
-        timer = [NSTimer scheduledTimerWithTimeInterval:1
-        target:self
-        selector:@selector(rand)
-        userInfo:nil
-        repeats:YES];
-        */
     }
     
     func getRandomNumber() {
@@ -52,30 +45,6 @@ class flash4ViewController: UIViewController {
         }
         //return random()
     }
-
-    /*
-    override var rand;(){
-    count = count + 1;
-    if(count <= 3){
-        var random : Int!
-        let randInt = arc4random_uniform(100);
-        random = arc4random() % 100;
-        sum = sum + random;
-        label.text = NSString(format:"%d", random) as String
-        //label.text = [NSString stringWithFormat:@"%d", random];
-    }else{
-        label.text = "答えは？"
-        timer.invalidate()
-        //[timer invalidate];
-        }
-
-        // Do any additional setup after loading the view.
-    }
-*/
-    
-    
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

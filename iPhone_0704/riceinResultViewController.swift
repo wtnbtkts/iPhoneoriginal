@@ -25,10 +25,6 @@ class riceinResultViewController: UIViewController, UIPickerViewDelegate,AVAudio
     
     @IBOutlet var seikai: UILabel!
     
-    //@IBOutlet var myLabel2 : UILabel!
-    
-    //private var myImageView: UIImageView!
-    
     var score : Int!
     
     @IBOutlet var mylabel2 : UILabel!

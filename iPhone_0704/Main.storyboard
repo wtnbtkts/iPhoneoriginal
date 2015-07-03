@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -41,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZEP-yz-2NA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-568.5" y="921.5"/>
+            <point key="canvasLocation" x="940.5" y="1997.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -122,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-37.5" y="921.5"/>
+            <point key="canvasLocation" x="519.5" y="1085.5"/>
         </scene>
         <!--Kazuate2 View Controller-->
         <scene sceneID="Fc6-tV-eTE">
@@ -169,7 +169,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2L9-qi-Jl4">
                                 <rect key="frame" x="67" y="411" width="240" height="174"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -207,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdL-xZ-58G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="627.5" y="1003.5"/>
+            <point key="canvasLocation" x="940.5" y="1095.5"/>
         </scene>
         <!--Kazuate3 View Controller-->
         <scene sceneID="QLJ-dU-eqJ">
@@ -256,7 +255,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gW7-b8-YPw">
                                 <rect key="frame" x="74" y="415" width="240" height="174"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -304,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qC-bl-1ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055.5" y="1003.5"/>
+            <point key="canvasLocation" x="1365.5" y="1095.5"/>
         </scene>
         <!--Kazuate4 View Controller-->
         <scene sceneID="b2P-R8-XMp">
@@ -353,7 +351,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wvE-8H-O5S">
                                 <rect key="frame" x="73" y="415" width="240" height="174"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -391,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gy7-VS-gae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1483.5" y="1003.5"/>
+            <point key="canvasLocation" x="1773.5" y="1095.5"/>
         </scene>
         <!--Riceout Result View Controller-->
         <scene sceneID="lz7-Hx-Jld">
@@ -495,7 +492,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HA3-RX-jJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601.5" y="1961.5"/>
+            <point key="canvasLocation" x="1365.5" y="1997.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5ky-La-TBC">
@@ -561,7 +558,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RMT-Q7-VHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1507.5" y="1961.5"/>
+            <point key="canvasLocation" x="2177.5" y="1997.5"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="8Yi-4t-Rdp">
@@ -667,7 +664,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-37.5" y="1679.5"/>
+            <point key="canvasLocation" x="519.5" y="1997.5"/>
         </scene>
         <!--Ricein Result View Controller-->
         <scene sceneID="O4w-MO-ubH">
@@ -766,7 +763,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rii-zr-4Mf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1069.5" y="1961.5"/>
+            <point key="canvasLocation" x="1773.5" y="1997.5"/>
         </scene>
         <!--Kazuate Result View Controller-->
         <scene sceneID="5i8-AB-wt1">
@@ -840,7 +837,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iU3-1D-W4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1898.5" y="1003.5"/>
+            <point key="canvasLocation" x="2177.5" y="1095.5"/>
         </scene>
         <!--Flash View Controller-->
         <scene sceneID="07a-Sg-ilo">
@@ -1286,18 +1283,18 @@
         <image name="skyb.jpg" width="320" height="481"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="15B-6t-hls"/>
         <segue reference="8LW-8v-7s3"/>
-        <segue reference="k9u-eh-Ibu"/>
+        <segue reference="Pof-Nr-lgL"/>
         <segue reference="vXq-8t-4GV"/>
         <segue reference="Swn-x4-Xf2"/>
         <segue reference="ycH-v6-1uc"/>
         <segue reference="aCG-Ad-Rw4"/>
         <segue reference="d3J-qx-UMb"/>
-        <segue reference="15B-6t-hls"/>
         <segue reference="BY1-7Q-1G9"/>
         <segue reference="oLt-Vk-hOE"/>
-        <segue reference="QxC-tk-jqf"/>
-        <segue reference="zrk-jc-7yk"/>
-        <segue reference="ZrS-UH-cTZ"/>
+        <segue reference="W06-lm-NuG"/>
+        <segue reference="krM-89-MQ2"/>
+        <segue reference="h1O-7k-yNL"/>
     </inferredMetricsTieBreakers>
 </document>
